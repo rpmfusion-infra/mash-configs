@@ -1,0 +1,24 @@
+# mash config file
+
+[29-updates]
+rpm_path = %(arch)s/
+repodata_path = %(arch)s/
+source_path = SRPMS/
+debuginfo = True
+multilib = True
+multilib_method = file
+multilib_file  = /etc/bodhi/rpmfusion-free.file
+tag = f29-free-updates
+inherit = False
+strict_keys = True
+keys = 42f19ed0
+repoviewurl = http://download1.rpmfusion.org/free/fedora/updates/29/%(arch)s/
+repoviewtitle = "RPM Fusion Fedora free 29 updates - %(arch)s"
+arches = armhfp i386 x86_64 ppc64le aarch64
+delta = False
+max_delta_rpm_size = 800000000
+max_delta_rpm_age = 604800
+delta_workers = 8
+# Change distro_tags as fedora-release version gets bumped
+#distro_tags = cpe:/o:fedoraproject:fedora:29 Twenty Three
+hash_packages = True

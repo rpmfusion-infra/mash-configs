@@ -1,0 +1,25 @@
+# mash config file
+
+[27-updates]
+rpm_path = %(arch)s/
+repodata_path = %(arch)s/
+source_path = SRPMS/
+debuginfo = True
+multilib = True
+multilib_method = file
+multilib_file  = /etc/bodhi/rpmfusion-nonfree.file
+tag = f27-nonfree-updates
+inherit = False
+strict_keys = True
+#keys = C1D5D3457F317578802EE33787047784B9C13282
+keys = b9c13282
+repoviewurl = http://download1.rpmfusion.org/nonfree/fedora/updates/27/%(arch)s/
+repoviewtitle = "RPM Fusion Fedora nonfree 27 updates - %(arch)s"
+arches = armhfp i386 x86_64 ppc64le ppc64 aarch64
+delta = False
+max_delta_rpm_size = 800000000
+max_delta_rpm_age = 604800
+delta_workers = 8
+# Change distro_tags as fedora-release version gets bumped
+#distro_tags = cpe:/o:fedoraproject:fedora:27 Twenty Three
+hash_packages = True

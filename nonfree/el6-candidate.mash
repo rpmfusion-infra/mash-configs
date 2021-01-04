@@ -1,0 +1,17 @@
+# mash config file
+
+[el6-candidate]
+rpm_path = %(arch)s/
+repodata_path = %(arch)s/
+source_path = SRPMS/
+debuginfo = True
+multilib = False
+multilib_method = file
+multilib_file  = /etc/bodhi/rpmfusion-nonfree.file
+tag = el6-nonfree-candidate
+inherit = False
+strict_keys = False
+keys = 5568BBB2
+arches = i386 x86_64 
+delta = False
+compress_type = bz2

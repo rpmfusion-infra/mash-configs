@@ -1,0 +1,18 @@
+# mash config file
+
+[el6-tainted]
+rpm_path = %(arch)s/
+repodata_path = %(arch)s/
+source_path = SRPMS/
+debuginfo = True
+multilib = True
+multilib_method = file
+multilib_file  = /etc/bodhi/rpmfusion-free.file
+tag = el6-free-tainted
+inherit = False
+strict_keys = True
+keys = 849C449F
+use_repoview = False
+arches = i386 x86_64 
+delta = False
+compress_type = bz2

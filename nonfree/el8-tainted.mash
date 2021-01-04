@@ -1,0 +1,23 @@
+# mash config file
+
+[el8-tainted]
+rpm_path = %(arch)s/
+repodata_path = %(arch)s/
+source_path = SRPMS/
+debuginfo = True
+multilib = True
+multilib_method = file
+multilib_file  = /etc/bodhi/rpmfusion-nonfree.file
+tag = el8-nonfree-tainted
+inherit = False
+strict_keys = True
+keys = bdda8475
+use_repoview = False
+arches = x86_64 ppc64le aarch64
+delta = False
+max_delta_rpm_size = 800000000
+max_delta_rpm_age = 604800
+delta_workers = 8
+# Change distro_tags as fedora-release version gets bumped
+#distro_tags = cpe:/o:fedoraproject:fedora:24 Twenty Three
+hash_packages = True
