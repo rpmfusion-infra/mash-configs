@@ -1,19 +1,18 @@
 # mash config file
 
-[rawhide]
-rpm_path = %(arch)s/os/Packages
-repodata_path = %(arch)s/os/
-source_path = source/SRPMS
+[44-tainted]
+rpm_path = %(arch)s/
+repodata_path = %(arch)s/
+source_path = SRPMS/
 debuginfo = True
 multilib = True
 multilib_method = file
-multilib_file  = /etc/bodhi/rpmfusion-nonfree.file
-tag = f44-nonfree
+multilib_file  = /etc/bodhi/rpmfusion-free.file
+tag = f44-free-tainted
 inherit = False
 strict_keys = True
-keys = 94843c65
-repoviewurl = http://download1.rpmfusion.org/nonfree/fedora/development/rawhide/Everything/%(arch)s/os/
-repoviewtitle = "RPM Fusion Fedora nonfree rawhide - %(arch)s"
+keys = d651ff2e
+use_repoview = False
 arches = x86_64 ppc64le aarch64
 delta = False
 max_delta_rpm_size = 800000000

@@ -1,24 +1,23 @@
 # mash config file
 
-[rawhide]
-rpm_path = %(arch)s/os/Packages
-repodata_path = %(arch)s/os/
-source_path = source/SRPMS
+[43-tainted]
+rpm_path = %(arch)s/
+repodata_path = %(arch)s/
+source_path = SRPMS/
 debuginfo = True
 multilib = True
 multilib_method = file
 multilib_file  = /etc/bodhi/rpmfusion-free.file
-tag = f44-free
+tag = f43-free-tainted
 inherit = False
 strict_keys = True
 keys = d651ff2e
-repoviewurl = http://download1.rpmfusion.org/free/fedora/development/rawhide/Everything/%(arch)s/os/
-repoviewtitle = "RPM Fusion Fedora free rawhide - %(arch)s"
+use_repoview = False
 arches = x86_64 ppc64le aarch64
 delta = False
 max_delta_rpm_size = 800000000
 max_delta_rpm_age = 604800
 delta_workers = 8
 # Change distro_tags as fedora-release version gets bumped
-distro_tags = cpe:/o:fedoraproject:fedora:44 Forty Four
+distro_tags = cpe:/o:fedoraproject:fedora:43 Forty Three
 hash_packages = True
