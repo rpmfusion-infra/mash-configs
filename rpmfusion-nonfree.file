@@ -8,12 +8,16 @@ intel-media-driver
 jad
 libCg
 lpf-skype
+nvidia-vaapi-driver
 pcsx2
 pipelight
 steam
 steam-noruntime
+steam-devices
 unace
 -xorg-x11-drv-nvidia-304xx-kmodsrc
 -xorg-x11-drv-nvidia-340xx-kmodsrc
 -xorg-x11-drv-nvidia-390xx-kmodsrc
+-xorg-x11-drv-nvidia-470xx-kmodsrc
+-xorg-x11-drv-nvidia-580xx-kmodsrc
 -xorg-x11-drv-nvidia-kmodsrc
