@@ -8,7 +8,7 @@ debuginfo = True
 multilib = True
 multilib_method = file
 multilib_file  = /etc/mash/rpmfusion-free.file
-tag = f44-free
+tag = f45-free
 inherit = False
 strict_keys = True
 keys = d651ff2e
@@ -20,5 +20,5 @@ max_delta_rpm_size = 800000000
 max_delta_rpm_age = 604800
 delta_workers = 8
 # Change distro_tags as fedora-release version gets bumped
-distro_tags = cpe:/o:fedoraproject:fedora:44 Forty Four
+distro_tags = cpe:/o:fedoraproject:fedora:45 Forty Five
 hash_packages = True

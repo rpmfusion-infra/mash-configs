@@ -1,6 +1,6 @@
 # mash config file
 
-[40-steam]
+[45-steam]
 rpm_path = %(arch)s/
 repodata_path = %(arch)s/
 source_path = SRPMS/
@@ -8,7 +8,7 @@ debuginfo = True
 multilib = True
 multilib_method = file
 multilib_file  = /etc/mash/rpmfusion-nonfree.file
-tag = f40-nonfree-steam
+tag = f45-nonfree-steam
 inherit = False
 strict_keys = False
 keys = 94843c65
@@ -19,5 +19,5 @@ max_delta_rpm_size = 800000000
 max_delta_rpm_age = 604800
 delta_workers = 8
 # Change distro_tags as fedora-release version gets bumped
-distro_tags = cpe:/o:fedoraproject:fedora:40 Forty
+distro_tags = cpe:/o:fedoraproject:fedora:45 Forty Five
 hash_packages = True

@@ -7,8 +7,8 @@ source_path = source/SRPMS
 debuginfo = True
 multilib = True
 multilib_method = file
-multilib_file  = /etc/bodhi/rpmfusion-nonfree.file
-tag = f44-nonfree
+multilib_file  = /etc/mash/rpmfusion-nonfree.file
+tag = f45-nonfree
 inherit = False
 strict_keys = True
 keys = 94843c65
@@ -20,5 +20,5 @@ max_delta_rpm_size = 800000000
 max_delta_rpm_age = 604800
 delta_workers = 8
 # Change distro_tags as fedora-release version gets bumped
-distro_tags = cpe:/o:fedoraproject:fedora:44 Forty Four
+distro_tags = cpe:/o:fedoraproject:fedora:45 Forty Five
 hash_packages = True

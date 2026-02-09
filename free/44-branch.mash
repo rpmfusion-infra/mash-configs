@@ -1,24 +1,24 @@
 # mash config file
 
-[42-branch]
+[44-branch]
 rpm_path = %(arch)s/os/Packages
 repodata_path = %(arch)s/os/
 source_path = source/SRPMS
 debuginfo = True
 multilib = True
 multilib_method = file
-multilib_file  = /etc/mash/rpmfusion-nonfree.file
-tag = f42-nonfree
+multilib_file  = /etc/mash/rpmfusion-free.file
+tag = f44-free
 inherit = False
 strict_keys = True
-keys = 94843c65
-repoviewurl = http://download1.rpmfusion.org/nonfree/fedora/development/42/Everything/%(arch)s/os/
-repoviewtitle = "RPM Fusion Fedora nonfree 42 Release - %(arch)s"
+keys = d651ff2e
+repoviewurl = http://download1.rpmfusion.org/free/fedora/development/44/Everything/%(arch)s/os/
+repoviewtitle = "RPM Fusion Fedora free 44 Branch - %(arch)s"
 arches = x86_64 ppc64le aarch64
 delta = False
 max_delta_rpm_size = 800000000
 max_delta_rpm_age = 604800
 delta_workers = 8
 # Change distro_tags as fedora-release version gets bumped
-distro_tags = cpe:/o:fedoraproject:fedora:42 Forty Two
+distro_tags = cpe:/o:fedoraproject:fedora:44 Forty Four
 hash_packages = True
