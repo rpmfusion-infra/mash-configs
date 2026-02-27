@@ -1,20 +1,20 @@
 # mash config file
 
-[el10-candidate]
+[el10-next-testing]
 rpm_path = %(arch)s/
 repodata_path = %(arch)s/
 source_path = SRPMS/
 debuginfo = True
-multilib = False
-#multilib_method = file
-#multilib_file  = /etc/mash/rpmfusion-free.file
-tag = el10-free-candidate
+multilib = True
+multilib_method = file
+multilib_file  = /etc/mash/rpmfusion-free.file
+tag = el10-next-free-testing
 inherit = False
-strict_keys = False
+strict_keys = True
 keys = db85ddd7
-#repoviewurl = http://download1.rpmfusion.org/free/el/updates/10/%(arch)s/
-#repoviewtitle = "RPM Fusion EL free 10 - %(arch)s"
-arches = x86_64 aarch64 ppc64le
+repoviewurl = http://download1.rpmfusion.org/free/el/updates/testing/10/%(arch)s/
+repoviewtitle = "RPM Fusion EL next free 10 testing - %(arch)s"
+arches = x86_64 ppc64le aarch64
 delta = False
 max_delta_rpm_size = 800000000
 max_delta_rpm_age = 604800
