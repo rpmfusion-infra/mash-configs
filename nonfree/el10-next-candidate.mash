@@ -1,20 +1,18 @@
 # mash config file
 
-[el10]
+[el10-next-candidate]
 rpm_path = %(arch)s/
 repodata_path = %(arch)s/
 source_path = SRPMS/
 debuginfo = True
-multilib = True
-multilib_method = file
-multilib_file  = /etc/mash/rpmfusion-nonfree.file
-tag = el10-nonfree
+multilib = False
+#multilib_method = file
+#multilib_file  = /etc/mash/rpmfusion-nonfree.file
+tag = el10-next-nonfree-candidate
 inherit = False
-strict_keys = True
+strict_keys = False
 keys = 1bc7b804
-repoviewurl = http://download1.rpmfusion.org/nonfree/el/updates/10/%(arch)s/
-repoviewtitle = "RPM Fusion EL nonfree 10 - %(arch)s"
-arches = x86_64 ppc64le aarch64
+arches = x86_64 ppc64le aarch64 
 delta = False
 max_delta_rpm_size = 800000000
 max_delta_rpm_age = 604800
