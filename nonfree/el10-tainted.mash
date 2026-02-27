@@ -1,6 +1,6 @@
 # mash config file
 
-[el9-tainted]
+[el10-tainted]
 rpm_path = %(arch)s/
 repodata_path = %(arch)s/
 source_path = SRPMS/
@@ -8,7 +8,7 @@ debuginfo = True
 multilib = True
 multilib_method = file
 multilib_file  = /etc/mash/rpmfusion-nonfree.file
-tag = el9-nonfree-tainted
+tag = el10-nonfree-tainted
 inherit = False
 strict_keys = True
 keys = aab212ea
